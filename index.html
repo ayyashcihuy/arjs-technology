@@ -11,17 +11,19 @@
         ></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <a-entity gltf-model="#smiley" rotation="45 45 45">
+        <a-entity gltf-model="#smiley" rotation="180 0 0">
           <a-animation
-            attribute="rotation"
-            begin="click"
+            attribute="position"
+            dur="5000"
+            direction="alternate"
+            from="0 1 0"
+            to="0 5 0"
             repeat="indefinite"
-            to="0 360 0"
           ></a-animation>
         </a-entity>
       </a-marker>
-      <a-camera position="0 7 5">
-        <a-cursor color="#FF0000"></a-cursor>
+      <a-camera>
+        <a-cursor></a-cursor>
       </a-camera>
       <a-entity camera></a-entity>
     </a-scene>
